@@ -9,7 +9,8 @@ body {
     grid-template-rows: 1fr 2fr 1fr;
     text-align: center;
     height: 100vh;
-   overflow: hidden;
+    overflow: hidden;
+    background-color: antiquewhite;
 }
 
 .row1, .row2, .row3 {
@@ -19,39 +20,154 @@ body {
 
 /* row 1 */
 
-.banner, .nav p {
-    margin-bottom: 10px;
+.header {
+    background-color: #698269;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav {
+    padding: 5px;
+    background-color:#698269;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .navBar {
     margin-bottom: 15px;
 }
+
+.title {
+    padding: 5px;
+}
 .navBar ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
 }
 
+.navBar, a:link {
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
 
+.navBar a:visited {
+    color: black;
+}
+
+.navBar a:active {
+    color: white;
+    background-color: #698269;
+    font-weight: bold;
+}
+
+.navBar a:hover {
+    color: white;
+}
+
+.grandroundsNav {
+    margin-top: 15px;
+}
+
+.grandroundsNav a:link {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px
+}
+
+.grandroundsNav a:visited {
+    color: black;
+}
+
+.grandroundsNav a:active {
+    color: white;
+    background-color: rgba(6, 97, 255, 0.443);
+    font-weight: bold;
+}
+
+.grandroundsNav  a:hover {
+    color: white;
+    background-color: #AA5656;
+}
+
+/* row 2*/
 .row2 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    border: 2px solid;
+}
+
+.archiveTable {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 350px;
+    overflow: scroll;
+}
+
+.archiveTable p {
+    color: rgb(238, 226, 226);
+}
+
+.archiveTable a:link {
+    color: #F1DBBF;
+    text-decoration: none;
+}
+
+.archiveTable a:visited {
+    color: #F1DBBF;
+}
+
+.archiveTable a:active {
+    color: #F1DBBF;
+    text-decoration: underline;
+}
+
+.archiveTable a:hover {
+    color: #B99B6B;
 }
 
 .archiveRow {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     border: 2px solid;
+    height: 50px;
+    padding: 8px;
+    background-color: #698269;
 }
-.footer {
+
+.archiveRow p {
+    align-self: center;
+    color: black;
+}
+
+/* row 3*/
+
+.row3 {
+    background-color: gray;
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
+}
+
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 20px 0px 20px;
 }
 
+.footer p {
+    text-align: center;
+}
+
+a:is(:link, :active, :visited).active {
+    background-color: #F1DBBF;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
 
