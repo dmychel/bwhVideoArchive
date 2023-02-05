@@ -5,42 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
     <title>Department of Medicine</title>
 </head>
 <body>
-    <div class="row1">
+    <div class="header">
         <div class="banner">
-            <div class="header">
-                <h2 class="title">Morning Report</h2>
-            </div>
+            <div class="title"><h3>Morning Report</h3></div>
 
-            <div class="nav">
-                <p>
-                    The archived content from this page has been approved by the Department of Medicine; appropriate consent has been acknowledged and recorded through the BWH Residency Program; for questions or concerns please contact the Medicine Chief Residents at <a href="mailto:BWHMROChiefRes@partners.org">BWHMROChiefRes@partners.org</a>
-                </p>
-                <div class="navBar">
-                    <h3>Academic Years</h3>
-                    <ul>
+            <div class="headerNav">
+                <div class="about">
+                    <p>
+                        The archived content from this page has been approved by the Department of Medicine; appropriate consent has been acknowledged and recorded through the BWH Residency Program; for questions or concerns please contact the Medicine Chief Residents at <a href="mailto:BWHMROChiefRes@partners.org">BWHMROChiefRes@partners.org</a>
+                    </p>
+                </div>
+            </div>
+            <div class="yearNav">
+                <h3>Academic Years</h3>
+                <ul>
                         <li><a id="year" href='/app.js'>2020</a></li>
                         <li><a id="year" href='/app.js'>2021</a></li>
                         <li><a id="year" href='/app.js' >2022</a></li>
                         <li><a id="year" href='/index.html' class="navBar">2023</a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
+    </div>
 
+    <div class="content">
         <div class="grandroundsNav">
             <p>
-                <a href="#">Morning Report </a>|
+                <a href="/index.html">Morning Report </a>|
                 <a href="#">Noon Conference </a>|
                 <a href="#">Medicine Grand Rounds </a>|
                 <a href="#">Brigopedia</a>
             </p>
         </div>
-    </div>
 
-    <div class="row2">
         <div class="archiveTable">
             <div class="archiveRow">
                 <p>1/26/2023</p>
@@ -99,12 +100,13 @@
         </div>
     </div>
 
-    <div class="row3">
-        <div class="footer">
+    <div class="footer">
+        <div class="left">
             <p class="left">Supported by the Video Education Library</p>
+        </div>
+        <div class="right">
             <p class="right">In collaboration with the Brigham Education Institute</p>
         </div>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
