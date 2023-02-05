@@ -48,8 +48,51 @@ body {
     gap: 10px;
     margin-top: 8px;
 }
+    /*---yearNav link style---*/
+    .yearNav a:link {
+        text-decoration: none;
+        color: black;
+        border-radius: 3px;
+        padding: 5px;
+    }
+    .yearNav a:visited {
+        color: black;
+    }
+
+    .yearNav a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+    .yearNav a:active {
+        text-decoration: underline;
+        font-size: larger;
+    }
 
 /*---content---*/ 
+    /*---grandroundsNavf link style---*/
+    .grandroundsNav a:link {
+        padding: 5px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+
+    .grandroundsNav a:visited {
+        color: black;
+    }
+
+    .grandroundsNav a:hover {
+        color: white;
+        font-weight: bold;
+        background-color: rgba(131, 32, 32, 0.644);
+    }
+
+    .grandroundsNav a:active {
+        text-decoration: underline;
+        font-size: larger;
+    }
+
+
 .archiveTable {
     margin: 70px 15px 0 15px;
     border-radius: 5px;
@@ -76,7 +119,25 @@ body {
     padding: 8px;
     background-color: #698269ea;
 }
+    /*---archiveTable link style---*/
+    .archiveTable a:link {
+        color: black;
+    }
+    .archiveTable a:visited {
+        color: black;
+    }
 
+    .archiveTable a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+    .archiveTable a:active {
+        text-decoration: underline;
+        font-size: larger;
+    }
+
+/*---footer---*/
 .footer {
     width: 100vw;
     background-color: gray;
@@ -195,8 +256,8 @@ body {
 
 
 a:is(:link, :active, :visited).active {
-    background-color: #F1DBBF;
-    color: black;
+    background-color: #f1dbbfc0;
+    color: #1e441ebb;
     font-weight: bold;
     text-decoration: none;
     padding: 5px;
