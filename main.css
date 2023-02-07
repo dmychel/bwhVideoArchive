@@ -19,7 +19,6 @@ body {
 
 .header {
     background-color: #698269;
-    border: 2px solid red;
     padding: 5px;
 }
 
@@ -65,7 +64,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    border: 2px solid red;
 }
 
 .grandroundsNav {
