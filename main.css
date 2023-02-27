@@ -69,6 +69,17 @@ body {
 .grandroundsNav {
     margin-top: 10px;
 }
+
+table {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: aliceblue;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(178, 216, 250);
+}
     /*---grandroundsNavf link style---*/
     .grandroundsNav a:link {
         padding: 5px;
@@ -93,49 +104,7 @@ body {
     }
 
 
-.archiveTable {
-    margin: 30px 10px 5px 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    height: 400px;
-    overflow: scroll;
-}
 
-.archiveTable p {
-    color: rgb(238, 226, 226);
-}
-
-.archiveRow p {
-    align-self: center;
-    flex-wrap: wrap;
-    color: black;
-}
-
-.archiveRow {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    border: 2px solid;
-    height: 50px;
-    padding: 8px;
-    background-color: #698269ea;
-}
-    /*---archiveTable link style---*/
-    .archiveTable a:link {
-        color: black;
-    }
-    .archiveTable a:visited {
-        color: black;
-    }
-
-    .archiveTable a:hover {
-        color: white;
-        font-weight: bold;
-    }
-
-    .archiveTable a:active {
-        text-decoration: underline;
-        font-size: larger;
-    }
 
 /*---footer---*/
 .footer {
@@ -178,10 +147,6 @@ body {
         font-size: 20px;
     }
 
-    .yearNav {
-
-    }
-
     .yearNav h3{
         font-size: 20px;
         margin-bottom: 5px;
@@ -200,14 +165,6 @@ body {
             padding: 8px;
         }
 
-    .archiveTable {
-        margin: 25px 20px 0 20px;
-        height: 600px;
-    }
-    .archiveRow {
-        height: 80px;
-    }
-
     .footer p {
         font-size: 20px;
     }
@@ -217,20 +174,6 @@ body {
 
 /*---Desktop---*/
 @media only screen and (min-width: 1000px) {
-   /*---header---*/
-   .header {
-   
-   }
-   .banner {
-   
-   }
-
-   .title {
-    
-   }
-   .headerNav {
- 
-    }
     /*---content---*/
     .content {
         display: flex;
@@ -238,19 +181,6 @@ body {
         align-items: center;
        
     }
-
-    .archiveTable {
-
-        height: 300px;
-        width: 650px;
-    }
-    .archiveRow {
-        height: 50px;
-    }
-        /* grandroundsNav links and lists styling */
-        .grandroundsNav a:link {
-            font-size: 20px;
-        }
 
     /* footer */
     .footer p {
