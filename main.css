@@ -22,6 +22,10 @@ body {
     padding: 5px;
 }
 
+.title {
+    margin: 5px 5px;
+}
+
 .navBar {
     margin-bottom: 15px;
 }
@@ -70,16 +74,52 @@ body {
     margin-top: 10px;
 }
 
-table {
-    margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 2px;
-    background-color: aliceblue;
+.tableContainer {
+    margin-top: 15px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    overflow-y: scroll;
+
 }
 
-tr:nth-child(even) {
-    background-color: rgb(178, 216, 250);
+table {
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: #698269;
 }
+
+th {
+    background-color: #394939;
+}
+
+td {
+    height: 50px;
+    flex-wrap: wrap;
+}
+    /* ---content link styling--- */
+    .tableContainer a:link {
+        padding: 5px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .tableContainer a:visited {
+        color: black;
+    }
+
+    .tableContainer a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .tableContainer a:active {
+        text-decoration: underline;
+        font-size: larger;
+    }
+
     /*---grandroundsNavf link style---*/
     .grandroundsNav a:link {
         padding: 5px;
@@ -159,6 +199,28 @@ tr:nth-child(even) {
 
     /*---content---*/
 
+    .tableContainer {
+        margin-top: 20px;
+        height: 700px;
+        width: 100%;
+    }
+
+    table {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    th {
+        background-color: #394939;
+        height: 50px;
+    }
+
+    td {
+        height: 100px;
+        border: 1px solid
+    }
+
+
         /* grandroundsNav lists and links styling */
         .grandroundsNav a:link {
             font-size: 25px;
@@ -174,12 +236,30 @@ tr:nth-child(even) {
 
 /*---Desktop---*/
 @media only screen and (min-width: 1000px) {
+
+    /* ---header--- */
+
     /*---content---*/
     .content {
         display: flex;
         justify-content: center;
         align-items: center;
-       
+    }
+
+    .grandroundsNav a:link {
+        font-size: 20px;
+    }
+
+    .tableContainer {
+        height: 300px;
+    }
+
+    th {
+        height: 25px;
+    }
+
+    td {
+        height: 50px;
     }
 
     /* footer */
